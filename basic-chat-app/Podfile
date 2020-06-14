@@ -1,0 +1,13 @@
+
+platform :ios, '13.0'
+
+target 'basic-chat-app' do
+
+  use_frameworks!
+
+  # Pods for basic-chat-app
+
+pod 'Firebase/Auth'
+pod 'Firebase/Firestore'
+
+end

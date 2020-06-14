@@ -24,6 +24,7 @@ class WelcomeViewController: UIViewController {
                 self.titleLabel.text!.append(letter)
             }
             count += 0.1
+            print(Date().timeIntervalSince)
         }
         
     }
