@@ -270,7 +270,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0lf-1s-iNv"/>
                     </view>
-                    <navigationItem key="navigationItem" id="TB3-bN-t0V"/>
+                    <navigationItem key="navigationItem" id="TB3-bN-t0V">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="EwF-Bb-vwc">
+                            <connections>
+                                <action selector="logOutTapped:" destination="giU-ul-6cN" id="KbN-wm-Qr2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="messageTextfield" destination="NTW-dg-o8l" id="ptH-Av-u3D"/>
                         <outlet property="tableView" destination="V1t-CQ-dZo" id="AEG-DK-VYD"/>
@@ -372,7 +378,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pgR-DH-9xX"/>
+        <segue reference="N61-uJ-BFr"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="121"/>
