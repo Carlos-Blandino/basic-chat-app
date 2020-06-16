@@ -17,7 +17,7 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         titleLabel.text = ""
-        var theTitle = "📣Basic Chat"
+        let theTitle = C.appName
         var count = 0.0
         for letter in theTitle {
             Timer.scheduledTimer(withTimeInterval: 0.1 + count, repeats: false) { (theTimer) in

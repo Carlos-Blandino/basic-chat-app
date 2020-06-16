@@ -11,12 +11,11 @@ import UIKit
 import Firebase
 
 class RegisterViewController: UIViewController {
-
+ 
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
     @IBAction func registerPressed(_ sender: UIButton) {
-        
-        
+    
         if let email = emailTextfield.text, let password = passwordTextfield.text {
             Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
                 if let errors = error {
@@ -32,7 +31,7 @@ class RegisterViewController: UIViewController {
                                                   handler: {(alert: UIAlertAction!) in print(myError)}))
                     self.present(alert, animated: true, completion: nil)
                 } else {
-                    self.performSegue(withIdentifier: "RegisterToChatSegue", sender: self)
+                    self.performSegue(withIdentifier: C.register , sender: self)
                 }
             }
         }
